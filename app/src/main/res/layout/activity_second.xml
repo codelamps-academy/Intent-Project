@@ -7,10 +7,42 @@
     tools:context=".SecondActivity">
 
     <TextView
+        android:id="@+id/sub_menu"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Second Activity"
-        android:textSize="50sp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content"
+        android:text="MENU"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="15dp"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btn_submenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BACK TO MENU"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@+id/sub_menu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_tampil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:hint="THIS IS SCREEN"
+        app:layout_constraintTop_toBottomOf="@id/btn_submenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="30dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

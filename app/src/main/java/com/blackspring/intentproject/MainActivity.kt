@@ -11,9 +11,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button_click.setOnClickListener(){
-
+        btn_menu.setOnClickListener(){
             val intent = Intent(this, SecondActivity::class.java)
+            intent.putExtra("firstName", "Andre Rizaldi ")
+            intent.putExtra("lastName", "Brillianto")
+            intent.putExtra("age", "26")
+            intent.putExtra("address", "Wijahan, Kemranjen, Banyumas, Jawa Tengah")
+            intent.putExtra("myJob", "Programming")
             startActivity(intent)
         }
     }
