@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // INTENT EKS
         btn_menu.setOnClickListener(){
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("firstName", "Andre Rizaldi ")
@@ -20,5 +21,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("myJob", "Programming")
             startActivity(intent)
         }
+
+
     }
 }

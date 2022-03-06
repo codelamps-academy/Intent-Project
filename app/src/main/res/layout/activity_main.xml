@@ -32,5 +32,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
+    <Button
+        android:id="@+id/google_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google Link"
+        app:layout_constraintTop_toBottomOf="@id/btn_menu"
+        android:layout_margin="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
